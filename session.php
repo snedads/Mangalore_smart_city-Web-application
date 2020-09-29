@@ -1,0 +1,9 @@
+<?php
+	session_start();
+	$mid=$_SESSION['mid'];
+	$mname=$_SESSION['mname'];
+	if(!(isset($mid)))
+	{
+		header('location:index.php');
+	}
+?>
